@@ -28,7 +28,7 @@ node {
 	}
 	
 	
-	//Stage 3: Test Code with Maven/DB
+	//Stage 3: Test Code with Maven/DATABASE
 	stage('Test with Maven/PSQL') {
 		container('kubectl'){
 			withKubeConfig([credentialsId: env.K8s_CREDENTIALS_ID,
