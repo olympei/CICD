@@ -16,7 +16,7 @@ node(POD_LABEL) {
 	def app2_container_name = 'todoui'
 	
 	//Stage 1: Checkout Code from Git
-	stage('Application Code Checkout from Git') {
+	stage('Application Code Checkout from Git Repo') {
 		checkout scm
 		
 	}
