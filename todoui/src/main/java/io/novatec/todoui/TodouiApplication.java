@@ -24,7 +24,7 @@ public class TodouiApplication {
 	@PostConstruct
 	public void postConstruct(){
 
-		System.out.println(" UI initialized for backend at "+endpoint);
+		System.out.println(" UI initialized for bakend at "+endpoint);
 	}
 
 	@GetMapping
