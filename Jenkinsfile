@@ -1,4 +1,10 @@
-node {
+podTemplate(containers: [
+    containerTemplate(name: 'maven', image: 'jenkins/jnlp-agent-maven', ttyEnabled: true, command: 'cat'),
+    containerTemplate(name: 'docker', image: 'jenkins/jnlp-agent-docker', ttyEnabled: true, command: 'cat')
+    containerTemplate(name: 'kubectl', image: 'olympei/jnlp-agent-kubectl', ttyEnabled: true, command: 'cat')
+  ]) {
+
+node(POD_LABEL) {
 	//Define all variables
 	def app1_name = 'todobackend'
 	def app2_name = 'todoui'
@@ -110,4 +116,4 @@ node {
   
 }
 
-
+}
