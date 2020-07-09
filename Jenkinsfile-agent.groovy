@@ -1,6 +1,6 @@
 
 
-	//Define all variables
+	//Def all variables
 	def app1_name = 'todobackend'
 	def app2_name = 'todoui'
 	def app1_image_tag = "${env.REPOSITORY}/${app1_name}:v${env.BUILD_NUMBER}"
